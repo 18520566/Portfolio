@@ -1,66 +1,57 @@
 @import "../../global.scss";
 
 .contact {
-    background-color: white;
+    background-color: $mainColor10;
+    width: 100%;
+    height: 50%;
     display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-    .left{
-        flex:1;
-        overflow: hidden;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        padding: 20px;
 
-        img{
-            height: 90%;
-            margin: 30px 60px;
-        } 
+        .logo {
+            a{
+                margin: 20px;
+            img {
+                width: 100px;
+                height: 100px;
+                @include mobile{
+                   width: 80px;
+                   height: 80px;
+                }
+            }
+        }
+        }
     }
 
-    .right{
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
+    h1{
+        font-size: 50px;
+    }
 
-        h2{
-            font-size: 30px;
+    h2{
+        font-size: 40px;
+
+        @include mobile{
+            font-size: 25px;
         }
+    }
 
-        form{
-            width: 70%;
-            height: 70%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
+    .top{
+        overflow: hidden;
+        margin: 30px;
+        width: 100px;
+        height: 100px;
 
-            input{
-                width: 300px;
-                height: 30px;
-                font-size: 14px;
-                border-radius: 10px;
-            }
-
-            textarea{
-                width: 300px;
-                height: 200px;
-                font-size: 14px;
-                border-radius: 10px;
-            }
-
-            button{
-                width: 150px;
-                height: 30px;
-                color: whitesmoke;
-                background-color: $mainColor4;
-                border:none;
-                border-radius: 10px;
-                font-weight: 500;
-                cursor: pointer;
-            }
-
-            span{
-                color: black;
-                transition: all 1s ease-in;
+        a {
+            img{
+                width: 100%;
+                height: 100%;
             }
         }
     }

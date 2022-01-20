@@ -3,10 +3,9 @@ import { useState, useEffect } from 'react';
 import "./portfolio.scss"
 import Portfoliolist from '../portfoliolist/Portfoliolist'
 import { featuredPortfolio, 
-    webPortfolio, 
-    mobilePortfolio, 
-    uiPortfolio, 
-    brandingPortfolio } from '../../data';
+    hobbyPortfolio, 
+    skillPortfolio, 
+    strengthPortfolio } from '../../data';
 
 export default function Portfolio() {
 
@@ -17,23 +16,19 @@ export default function Portfolio() {
     const list = [
         {
             id: "featured",
-            title: "Featured",
+            title: "Featured Projects",
         },
         {
-            id: "web",
-            title: "Web Application",
+            id: "strength",
+            title: "My Strengths",
         },
         {
-            id: "mobile",
-            title: "Mobile Application",
+            id: "hobby",
+            title: "My Hobbies",
         },
         {
-            id: "ui",
-            title: "UI/UX Design",
-        },
-        {
-            id: "brand",
-            title: "Branding",
+            id: "skill",
+            title: "My Skills",
         },
     ]
 
@@ -42,17 +37,14 @@ export default function Portfolio() {
                 case "featured":
                     setData(featuredPortfolio);
                     break;
-                case "web":
-                    setData(webPortfolio);
+                case "strengh":
+                    setData(strengthPortfolio);
                     break;
-                case "mobile":
-                    setData(mobilePortfolio);
+                case "hobby":
+                    setData(hobbyPortfolio);
                     break;
-                case "ui":
-                    setData(uiPortfolio);
-                    break;
-                case "brand":
-                    setData(brandingPortfolio);
+                case "skill":
+                    setData(skillPortfolio);
                     break;
                 default:
                     setData(featuredPortfolio);

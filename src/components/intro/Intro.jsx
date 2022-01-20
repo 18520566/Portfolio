@@ -19,7 +19,7 @@ export default function Intro() {
         <div className="intro" id="intro">
             <div className="left">
                 <div className="imgContainer">
-                    <img src="assets/CV_ava-removebg-preview.png" alt="" />
+                    <img src={`${process.env.PUBLIC_URL}/assets/CV_ava-removebg-preview.png`} alt="" />
                 </div>
             </div>
             <div className="right">
@@ -29,7 +29,7 @@ export default function Intro() {
                     <h3>Software <span ref={textRef}></span></h3>
                 </div>
                 <a href="#portfolio">
-                    <img src="assets/down_icon.png" alt="" />
+                    <img src={`${process.env.PUBLIC_URL}/assets/down_icon.png`} alt="" />
                 </a>
             </div>
         </div>

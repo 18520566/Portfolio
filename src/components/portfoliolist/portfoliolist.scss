@@ -8,6 +8,11 @@
         cursor: pointer;
         font-weight: 700;
 
+
+        @include mobile{
+            margin: 0 25px;
+        }
+
         &.active{
             background-color: white;
             color: $mainColor4;

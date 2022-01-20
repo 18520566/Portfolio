@@ -6,3 +6,13 @@ $mainColor5: #C0FDFB;
 $mainColor6: #F7D8BA;
 $mainColor7: #ACDDDE;
 $mainColor8: #CAF1DE;
+$mainColor9: #59bd99;
+$mainColor10: #4792f9;
+
+$width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content 
+    }
+}
