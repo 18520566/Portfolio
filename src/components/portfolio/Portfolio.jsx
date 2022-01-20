@@ -37,7 +37,7 @@ export default function Portfolio() {
                 case "featured":
                     setData(featuredPortfolio);
                     break;
-                case "strengh":
+                case "strength":
                     setData(strengthPortfolio);
                     break;
                 case "hobby":
